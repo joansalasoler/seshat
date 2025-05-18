@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="CommandPalette" parent="GtkApplicationWindow">
+    <property name="name">command_palette</property>
+    <property name="title">Command Palette</property>
+    <property name="resizable">false</property>
+    <property name="decorated">false</property>
+    <child>
+      <object class="GtkOverlay" id="listbox_overlay">
+        <property name="name">listbox_overlay</property>
+        <property name="visible">true</property>
+        <property name="hexpand">true</property>
+        <property name="vexpand">true</property>
+        <child>
+          <object class="GtkBox" id="main_box">
+            <property name="name">main_box</property>
+            <property name="orientation">vertical</property>
+            <style><class name="background"/></style>
+            <child>
+              <object class="GtkSearchEntry" id="search_entry">
+                <property name="name">search_entry</property>
+                <property name="placeholder_text">Search a task or write your own</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="scrolled_window">
+                <property name="name">scrolled_window</property>
+                <property name="hscrollbar-policy">never</property>
+                <property name="vscrollbar-policy">automatic</property>
+                <property name="propagate-natural-height">false</property>
+                <property name="vexpand">true</property>
+                <child>
+                  <object class="GtkBox" id="listbox_container"></object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="GtkBox" id="status_box">
+            <property name="name">status_box</property>
+            <property name="orientation">vertical</property>
+            <property name="hexpand">true</property>
+            <property name="vexpand">false</property>
+            <property name="halign">fill</property>
+            <property name="valign">end</property>
+            <property name="visible">false</property>
+            <child>
+              <object class="GtkLabel" id="status_label">
+                <property name="name">status_label</property>
+                <property name="wrap">true</property>
+                <property name="wrap-mode">word-char</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="hexpand">true</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkProgressBar" id="progress_bar">
+                <property name="name">progress_bar</property>
+                <property name="hexpand">true</property>
+                <property name="valign">end</property>
+                <property name="fraction">0.0</property>
+                <property name="show-text">false</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

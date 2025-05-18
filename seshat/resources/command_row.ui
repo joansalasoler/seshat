@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="CommandRow" parent="GtkListBoxRow">
+    <property name="name">command_row</property>
+    <property name="focusable">false</property>
+    <property name="hexpand">true</property>
+    <child>
+      <object class="GtkBox" id="container">
+        <property name="orientation">horizontal</property>
+        <property name="hexpand">true</property>
+        <child>
+          <object class="GtkImage" id="icon">
+            <property name="name">icon</property>
+            <style><class name="icon"/></style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label">
+            <style><class name="label"/></style>
+            <property name="xalign">0</property>
+            <property name="halign">fill</property>
+            <property name="hexpand">true</property>
+            <property name="wrap">true</property>
+            <property name="wrap-mode">word-char</property>
+            <property name="use_markup">true</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkToggleButton" id="star_button">
+            <property name="name">star_button</property>
+            <property name="focusable">false</property>
+            <property name="tooltip-text">Bookmark this prompt</property>
+            <property name="active">false</property>
+            <style>
+              <class name="flat"/>
+              <class name="star_button"/>
+            </style>
+            <child>
+              <object class="GtkImage" id="star_icon">
+                <property name="icon-name">non-starred-symbolic</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

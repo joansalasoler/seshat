@@ -1,0 +1,65 @@
+#command_palette {
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, .8);
+  margin: 10px;
+}
+
+#scrolled_window {
+  margin: 5px 10px 10px 10px;
+}
+
+#search_entry {
+  background-color: transparent;
+  margin: 10px 10px 5px 10px;
+}
+
+#command_list {
+  background-color: transparent;
+}
+
+#command_row {
+  border-radius: 5px;
+  margin: 2px 0;
+}
+
+#command_row .icon {
+  margin: 5px 10px;
+}
+
+#command_row .label {
+  margin: 5px 10px;
+}
+
+#command_row .star_button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  padding: 0 10px;
+}
+
+#status_box {
+  margin: 10px;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+#status_box #status_label {
+  font-size: .9em;
+  margin-bottom: 5px;
+}
+
+#status_box.error {
+  background-color: rgb(255, 232, 223);
+  border-color: rgb(255, 208, 196);
+}
+
+#status_box.error #status_label {
+  color: rgb(50, 50, 50);
+}
+
+#progress_bar {
+  min-height: 5px;
+  margin-top: 5px;
+}

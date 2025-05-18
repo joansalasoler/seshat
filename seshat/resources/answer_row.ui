@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="AnswerRow" parent="GtkListBoxRow">
+    <property name="name">command_row</property>
+    <property name="focusable">false</property>
+    <property name="hexpand">true</property>
+    <child>
+      <object class="GtkBox" id="container">
+        <property name="orientation">horizontal</property>
+        <property name="hexpand">true</property>
+        <child>
+          <object class="GtkImage" id="icon">
+            <property name="name">icon</property>
+            <property name="icon-name">edit-paste-symbolic</property>
+            <style><class name="icon"/></style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label">
+            <style><class name="label"/></style>
+            <property name="xalign">0</property>
+            <property name="halign">fill</property>
+            <property name="hexpand">true</property>
+            <property name="wrap">true</property>
+            <property name="wrap-mode">word-char</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

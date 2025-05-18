@@ -1,0 +1,459 @@
+{
+    "commands": [
+        {
+            "uuid": "ff07813d-7d38-4ae0-b443-da71d9db5a01",
+            "label": "Add a call to action after this",
+            "user_query": "Add a call to action after this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "3c079f7c-bc82-4337-a386-5e441eeb3135",
+            "label": "Add humor to this text",
+            "user_query": "Add humor to this text",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "e62b30c7-4997-4b53-ac7c-aac714279e9f",
+            "label": "Add transitions to improve coherence",
+            "user_query": "Add transitions to improve coherence",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "07018a03-61ba-48c7-a82d-93a3d586dc4f",
+            "label": "Adjust idioms for a global audience",
+            "user_query": "Adjust idioms for a global audience",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "2afdda69-0b78-4c52-8de9-1e45fa1a600a",
+            "label": "Adjust for an executive audience",
+            "user_query": "Adjust for an executive audience",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "fbd166b4-6376-4942-8ee1-a83a74217f68",
+            "label": "Brainstorm ideas based on this",
+            "user_query": "Brainstorm ideas based on this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "f46aa3e1-8486-41f6-8968-dd1d006821ef",
+            "label": "Change the tone to be more empathetic",
+            "user_query": "Change the tone to be more empathetic",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "d6922ac4-3569-4cc0-a26b-319ebd30a7f3",
+            "label": "Replace word repetitions",
+            "user_query": "Replace word repetitions",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "02a07bed-edf9-4e36-b157-57b7db402971",
+            "label": "Convert into a numbered list",
+            "user_query": "Convert into a numbered list",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "001286e0-f7e1-42c1-882f-ea07184f39cf",
+            "label": "Define this word or phrase",
+            "user_query": "Define this word or phrase",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "2dd63e9d-1c51-427f-ade2-e81823e2da8d",
+            "label": "Extract key facts",
+            "user_query": "Extract key facts",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "b078d767-20cd-468a-b580-33b7ce540235",
+            "label": "Generate a headline based on this",
+            "user_query": "Generate a headline based on this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "0afa9ee3-fc8d-4825-943a-53676f3984bc",
+            "label": "Generate a metaphor for this idea",
+            "user_query": "Generate a metaphor for this idea",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "2e48238b-91a4-4867-940f-931a308a06f8",
+            "label": "Give 5 alternative titles for this",
+            "user_query": "Give 5 alternative titles for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "5b29151a-80ea-4420-ad14-4a12f791e94b",
+            "label": "Highlight the key points",
+            "user_query": "Highlight the key points",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "9574f379-6c05-4b27-9a77-c221fa5f0b07",
+            "label": "Improve the grammar and punctuation",
+            "user_query": "Improve the grammar and punctuation",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "97c33d16-04a3-467d-b15c-cfc0fb58b635",
+            "label": "Improve this text",
+            "user_query": "Improve this text",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "a404db04-ab30-430f-88df-ab427cf5374c",
+            "label": "Localize for a British audience",
+            "user_query": "Localize for a British audience",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "c07775bb-2dad-4920-9f11-9f6294424895",
+            "label": "Make the tone consistent throughout",
+            "user_query": "Make the tone consistent throughout",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "5e7533d8-bed7-4012-b88c-7da1daf52c20",
+            "label": "Make this more concise and direct",
+            "user_query": "Make this more concise and direct",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "553123f9-6280-4010-bcd8-bcf16a83da90",
+            "label": "Make this sound more authoritative",
+            "user_query": "Make this sound more authoritative",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "c77be9e0-ecde-4b6c-a654-6942db5a6a53",
+            "label": "Make this sound more conversational",
+            "user_query": "Make this sound more conversational",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "58287e33-eb8f-4bcd-a323-64e82c0bce90",
+            "label": "Make this sound more engaging",
+            "user_query": "Make this sound more engaging",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "fbd6c1d1-66b0-4ece-8518-2d8b7a246630",
+            "label": "Make this sound more persuasive",
+            "user_query": "Make this sound more persuasive",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "70749c81-e2ad-4773-91d6-d1a631d2343b",
+            "label": "Make this suitable for an international audience",
+            "user_query": "Make this suitable for an international audience",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "2760c4b5-4dc1-4228-974d-533b2faea55b",
+            "label": "Organize this list logically",
+            "user_query": "Organize this list logically",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "989c8d74-47b2-421c-b1a8-9c78dadf4f2f",
+            "label": "Polish for publication",
+            "user_query": "Polish for publication",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "547e3fe0-fca4-4f77-9924-d7d76f6991b3",
+            "label": "Rearrange for better flow",
+            "user_query": "Rearrange for better flow",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "dc5763c7-5bdd-4011-b264-67eaab610ef6",
+            "label": "Rephrase to avoid repetition",
+            "user_query": "Rephrase to avoid repetition",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "c2d01444-fc7e-40f6-8391-1eb2c349fccd",
+            "label": "Replace jargon with plain language",
+            "user_query": "Replace jargon with plain language",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "07278b2e-9241-4d20-a321-f190d1da7283",
+            "label": "Reword to remove redundancy",
+            "user_query": "Reword to remove redundancy",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "3696d140-7953-486d-a726-eeb9bb92b027",
+            "label": "Rewrite to avoid passive voice",
+            "user_query": "Rewrite to avoid passive voice",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "57efa256-647d-4feb-b750-7eb605654ea2",
+            "label": "Rewrite to improve clarity",
+            "user_query": "Rewrite to improve clarity",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "a22376b6-ce07-40a1-be85-918c780bd947",
+            "label": "Rewrite to match a formal tone",
+            "user_query": "Rewrite to match a formal tone",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "ba5a292e-66c5-4c1c-be00-12b6e296e939",
+            "label": "Rewrite to match the intended audience",
+            "user_query": "Rewrite to match the intended audience",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "cd885149-4b94-4f46-b485-0ad20ec95651",
+            "label": "Rewrite to sound more friendly and approachable",
+            "user_query": "Rewrite to sound more friendly and approachable",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "b8e20874-4aa0-495a-b98e-755a9200b001",
+            "label": "Rewrite to sound more professional",
+            "user_query": "Rewrite to sound more professional",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "b9e690a3-fb2b-4de0-9cfa-26b57953df75",
+            "label": "Rewrite with a humorous tone",
+            "user_query": "Rewrite with a humorous tone",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "ebada6f4-3467-41ab-ada6-cb0f0d3ae47d",
+            "label": "Rewrite with a sarcastic tone",
+            "user_query": "Rewrite with a sarcastic tone",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "4bc2e24e-d662-4d43-8afa-cbe75c96bcc3",
+            "label": "Suggest a more precise word for this",
+            "user_query": "Suggest a more precise word for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "974e5d00-3f31-4424-9cee-f79188100c25",
+            "label": "Suggest 10 antonyms for this",
+            "user_query": "Suggest 10 antonyms for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "630d6290-9d38-421a-8daa-7960e5caac2e",
+            "label": "Suggest 10 adjectives that intensify this",
+            "user_query": "Suggest 10 adjectives that intensify this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "5377d404-7240-474c-9a13-1b2df65baa64",
+            "label": "Suggest 10 emotionally neutral versions of this",
+            "user_query": "Suggest 10 emotionally neutral versions of this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "3e5ea377-ba6b-45a6-8185-073921290026",
+            "label": "Suggest 10 euphemisms for this",
+            "user_query": "Suggest 10 euphemisms for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "49712385-4a5c-4d3d-8fd4-b584c69abcde",
+            "label": "Suggest 10 hypernyms for this",
+            "user_query": "Suggest 10 hypernyms for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "7b537354-28ed-47b0-bd0e-69d060a71170",
+            "label": "Suggest 10 hyponyms for this",
+            "user_query": "Suggest 10 hyponyms for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "09875f32-387e-4386-beb4-b9c86cbd68d5",
+            "label": "Suggest 10 idioms or expressions related to this",
+            "user_query": "Suggest 10 idioms or expressions related to this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "5924a8f1-2956-4b1f-87fe-ea274fd36e09",
+            "label": "Suggest 10 more formal alternatives for this",
+            "user_query": "Suggest 10 more formal alternatives for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "ea50815c-3437-473f-8f2d-5307de1e4bab",
+            "label": "Suggest 10 simpler alternatives for this",
+            "user_query": "Suggest 10 simpler alternatives for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "ecf80dd7-743e-4d57-8730-5d09ca2bad36",
+            "label": "Suggest 10 slang alternatives for this",
+            "user_query": "Suggest 10 slang alternatives for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "27cab63b-5fb7-4162-a8b1-7e558c20d637",
+            "label": "Suggest 10 stronger or more vivid words to replace this",
+            "user_query": "Suggest 10 stronger or more vivid words to replace this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "d0986418-db44-4e1d-9808-67fdd9214e7a",
+            "label": "Suggest 10 synonyms for this",
+            "user_query": "Suggest 10 synonyms for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "d9f76354-25a3-4a9e-8e3f-0e31cabb7f3a",
+            "label": "Rephrase with a more persuasive tone",
+            "user_query": "Rephrase with a more persuasive tone",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "982ea546-0441-4acf-b2ee-156e553fe72a",
+            "label": "Suggest 10 words that naturally go with this",
+            "user_query": "Suggest 10 words that naturally go with this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "c01311ac-0845-4ef6-88db-5cb738208a7f",
+            "label": "Translate into English",
+            "user_query": "Translate into English",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "b8319142-9be7-4520-8c54-03a5a86ef8de",
+            "label": "Translate into Spanish",
+            "user_query": "Translate into Spanish",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "db987031-2d6b-444b-b017-bbc6ce937dbe",
+            "label": "Turn this into a joke",
+            "user_query": "Turn this into a joke",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "d64a507a-65fe-46c5-8b9f-989b41103b77",
+            "label": "Turn this into a short story",
+            "user_query": "Turn this into a short story",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "05596018-2018-4efc-bfdc-7a91657d54c4",
+            "label": "Turn this into an outline",
+            "user_query": "Turn this into an outline",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "42ec83f5-4d61-4a9c-a05e-e6f4fcab55de",
+            "label": "Turn this into bullet points",
+            "user_query": "Turn this into bullet points",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "22501cc6-349f-41e4-9cb1-a5132715d4b7",
+            "label": "Use this word in a sentence",
+            "user_query": "Use this word in a sentence",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "7e331898-8d2a-471e-aeb1-1237b1c02934",
+            "label": "Write a catchy title for this",
+            "user_query": "Write a catchy title for this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "e0e0a372-5467-483a-a8d5-0150fc24a50e",
+            "label": "Write a conclusion for this section",
+            "user_query": "Write a conclusion for this section",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "aacfd0b9-e0b6-4e32-baad-75bf7393c7ec",
+            "label": "Write a poetic version of this",
+            "user_query": "Write a poetic version of this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        },
+        {
+            "uuid": "239488ec-4c83-4434-92f7-dff5c939f1c3",
+            "label": "Write a short caption for social media based on this",
+            "user_query": "Write a short caption for social media based on this",
+            "icon_name": "insert-text-symbolic",
+            "action_name": "ai:query"
+        }
+    ]
+}

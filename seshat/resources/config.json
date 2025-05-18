@@ -1,0 +1,111 @@
+{
+    "window_width": 500,
+    "window_height": 360,
+    "paste_delay": 0.3,
+    "paste_keybinding": "shift+Insert",
+    "hotkey_poll_interval": 0.05,
+    "hotkey_modifiers": ["KEY_LEFTMETA", "KEY_RIGHTMETA"],
+    "hotkey_trigger": "KEY_SPACE",
+    "chat_base_url": "http://localhost:11434",
+    "chat_default_model": "gemma3:4b",
+    "chat_user_context": {},
+    "max_user_commands": 100,
+    "commands": [
+        {
+            "uuid": "12c23d4a-f6bf-424a-96e7-f1a2653fb660",
+            "label": "Carry on this task on the selected text",
+            "icon_name": "system-search-symbolic",
+            "action_name": "ai:query",
+            "is_starred": true,
+            "is_fallback": true,
+            "is_template": true,
+            "is_builtin": true
+        },
+        {
+            "uuid": "1b28a929-d2a8-4d76-a689-143906e76696",
+            "label": "Evaluate algebraic query",
+            "icon_name": "edit-paste-symbolic",
+            "action_name": "math:evaluate_query",
+            "is_starred": true,
+            "is_proactive": true,
+            "is_builtin": true
+        },
+        {
+            "uuid": "8a840410-f5ae-48b7-93db-2f3f0ec1ff6d",
+            "label": "Evaluate this algebraic expression",
+            "icon_name": "accessories-calculator-symbolic",
+            "action_name": "math:evaluate_text",
+            "is_builtin": true
+        },
+        {
+            "uuid": "8f96d845-252a-4524-82a6-e8c762edfd52",
+            "label": "Transform to uppercase",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:upper",
+            "is_builtin": true
+        },
+        {
+            "uuid": "9fa4172f-ffaa-47d6-8757-9677aa0ba4ac",
+            "label": "Transform to lowercase",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:lower",
+            "is_builtin": true
+        },
+        {
+            "uuid": "f186296a-5efd-45af-ae44-883a12de1c99",
+            "label": "Transform to title case",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:title",
+            "is_builtin": true
+        },
+        {
+            "uuid": "3aa133b2-61ca-491d-917b-bbb589755a4a",
+            "label": "Trim whitespace",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:strip",
+            "is_builtin": true
+        },
+        {
+            "uuid": "13e1233a-d418-470e-8cb3-96d00225dbbd",
+            "label": "Capitalize lines",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:capitalize",
+            "is_builtin": true
+        },
+        {
+            "uuid": "4941ef7c-b11d-45d0-b0a6-f713705882c9",
+            "label": "Delete duplicate lines",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:remove_duplicates",
+            "is_builtin": true
+        },
+        {
+            "uuid": "3b782297-7b38-44e0-81b4-a93ca9d087b3",
+            "label": "Delete empty lines",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:remove_empty",
+            "is_builtin": true
+        },
+        {
+            "uuid": "49cde1c6-00f1-4462-86d1-75fd2de74ba7",
+            "label": "Reverse lines",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:reverse",
+            "is_builtin": true
+        },
+        {
+            "uuid": "55fccf5b-34ac-4501-9d7d-06e51f84793f",
+            "label": "Sort lines ascending",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:sort_ascending",
+            "is_builtin": true
+        },
+        {
+            "uuid": "85c47cb8-a05b-47ff-b6ac-ca2b68098e68",
+            "label": "Sort lines descending",
+            "icon_name": "format-justify-left-symbolic",
+            "action_name": "text:sort_descending",
+            "is_builtin": true
+        }
+    ]
+}

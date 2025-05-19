@@ -150,6 +150,11 @@ class CommandPalette(Gtk.ApplicationWindow):
 
         self._answer_list.remove_all()
 
+    def clear_commands(self):
+        """Remove all rows from the commands list."""
+
+        self._command_list.remove_all()
+
     def navigate_next(self) -> None:
         """Navigate to the next item in the active list."""
 

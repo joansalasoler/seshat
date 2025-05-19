@@ -92,6 +92,13 @@ class ConfigManager:
         except Exception as e:
             _logger.error("Error saving usage: %s", e)
 
+    def reload_settings(self):
+        """Reload configuration from files."""
+
+        self._commands = {}
+        self._config = {}
+        self._load_config()
+
     def close(self):
         """Close all database connections."""
 

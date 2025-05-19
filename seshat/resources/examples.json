@@ -352,8 +352,8 @@
         },
         {
             "uuid": "27cab63b-5fb7-4162-a8b1-7e558c20d637",
-            "label": "Suggest 10 stronger or more vivid words to replace this",
-            "user_query": "Suggest 10 stronger or more vivid words to replace this",
+            "label": "Suggest 10 stronger or more vivid words",
+            "user_query": "Suggest 10 stronger or more vivid words",
             "icon_name": "insert-text-symbolic",
             "action_name": "ai:query"
         },

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Seshat 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-19 08:37+0200\n"
-"PO-Revision-Date: 2025-05-19 08:49+0200\n"
+"PO-Revision-Date: 2025-05-19 11:43+0200\n"
 "Last-Translator: Joan Sala <contact@joansala.com>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -81,3 +81,315 @@ msgstr "Se agotó el tiempo máximo de evaluación"
 #: seshat/resources/command_palette.ui:22
 msgid "Search a task or write your own"
 msgstr "Busca una tarea o escribe la tuya propia"
+
+#: seshat/resources/config.json:16
+msgid "Carry on this task on the selected text"
+msgstr "Aplicar esta tarea al texto seleccionado"
+
+#: seshat/resources/config.json:24
+msgid "Evaluate algebraic query"
+msgstr "Evaluar la consulta algebraica"
+
+#: seshat/resources/config.json:32
+msgid "Evaluate this algebraic expression"
+msgstr "Evaluar esta expresión algebraica"
+
+#: seshat/resources/config.json:39
+msgid "Transform to uppercase"
+msgstr "Convertir a mayúsculas"
+
+#: seshat/resources/config.json:46
+msgid "Transform to lowercase"
+msgstr "Convertir a minúsculas"
+
+#: seshat/resources/config.json:53
+msgid "Capitalize first letter of each word"
+msgstr "Convertir a mayúscula inicial cada palabra"
+
+#: seshat/resources/config.json:60
+msgid "Trim whitespace"
+msgstr "Eliminar espacios en blanco"
+
+#: seshat/resources/config.json:67
+msgid "Capitalize first letter of each line"
+msgstr "Convertir a mayúscula inicial cada línea"
+
+#: seshat/resources/config.json:74
+msgid "Delete duplicate lines"
+msgstr "Eliminar líneas duplicadas"
+
+#: seshat/resources/config.json:81
+msgid "Delete empty lines"
+msgstr "Eliminar líneas vacías"
+
+#: seshat/resources/config.json:88
+msgid "Reverse lines"
+msgstr "Invertir las líneas"
+
+#: seshat/resources/config.json:95
+msgid "Sort lines ascending"
+msgstr "Ordenar las líneas ascendentemente"
+
+#: seshat/resources/config.json:102
+msgid "Sort lines descending"
+msgstr "Ordenar las líneas descendentemente"
+
+#: seshat/resources/examples.json:5
+msgid "Add a call to action after this"
+msgstr "Añade una llamada a la acción después de esto"
+
+#: seshat/resources/examples.json:12
+msgid "Add humor to this text"
+msgstr "Añade humor a este texto"
+
+#: seshat/resources/examples.json:19
+msgid "Add transitions to improve coherence"
+msgstr "Añade transiciones para mejorar la coherencia"
+
+#: seshat/resources/examples.json:26
+msgid "Adjust idioms for a global audience"
+msgstr "Adapta los modismos para una audiencia global"
+
+#: seshat/resources/examples.json:33
+msgid "Adjust for an executive audience"
+msgstr "Adapta el texto para una audiencia ejecutiva"
+
+#: seshat/resources/examples.json:40
+msgid "Brainstorm ideas based on this"
+msgstr "Haz una lluvia de ideas basada en esto"
+
+#: seshat/resources/examples.json:47
+msgid "Change the tone to be more empathetic"
+msgstr "Cambia el tono para que sea más empático"
+
+#: seshat/resources/examples.json:54
+msgid "Replace word repetitions"
+msgstr "Reemplaza repeticiones de palabras"
+
+#: seshat/resources/examples.json:61
+msgid "Convert into a numbered list"
+msgstr "Convierte en una lista numerada"
+
+#: seshat/resources/examples.json:68
+msgid "Define this word or phrase"
+msgstr "Define esta palabra o frase"
+
+#: seshat/resources/examples.json:75
+msgid "Extract key facts"
+msgstr "Extrae los datos clave"
+
+#: seshat/resources/examples.json:82
+msgid "Generate a headline based on this"
+msgstr "Genera un titular basado en esto"
+
+#: seshat/resources/examples.json:89
+msgid "Generate a metaphor for this idea"
+msgstr "Genera una metáfora para esta idea"
+
+#: seshat/resources/examples.json:96
+msgid "Give 5 alternative titles for this"
+msgstr "Propón 5 títulos alternativos para esto"
+
+#: seshat/resources/examples.json:103
+msgid "Highlight the key points"
+msgstr "Resalta los puntos clave"
+
+#: seshat/resources/examples.json:110
+msgid "Improve the grammar and punctuation"
+msgstr "Mejora la gramática y la puntuación"
+
+#: seshat/resources/examples.json:117
+msgid "Improve this text"
+msgstr "Mejora este texto"
+
+#: seshat/resources/examples.json:124
+msgid "Localize for a British audience"
+msgstr "Localiza para una audiencia británica"
+
+#: seshat/resources/examples.json:131
+msgid "Make the tone consistent throughout"
+msgstr "Haz que el tono sea coherente en todo el texto"
+
+#: seshat/resources/examples.json:138
+msgid "Make this more concise and direct"
+msgstr "Hazlo más conciso y directo"
+
+#: seshat/resources/examples.json:145
+msgid "Make this sound more authoritative"
+msgstr "Haz que suene más autoritario"
+
+#: seshat/resources/examples.json:152
+msgid "Make this sound more conversational"
+msgstr "Haz que suene más conversacional"
+
+#: seshat/resources/examples.json:159
+msgid "Make this sound more engaging"
+msgstr "Haz que suene más atractivo"
+
+#: seshat/resources/examples.json:166
+msgid "Make this sound more persuasive"
+msgstr "Haz que suene más persuasivo"
+
+#: seshat/resources/examples.json:173
+msgid "Make this suitable for an international audience"
+msgstr "Hazlo adecuado para una audiencia internacional"
+
+#: seshat/resources/examples.json:180
+msgid "Organize this list logically"
+msgstr "Organiza esta lista de forma lógica"
+
+#: seshat/resources/examples.json:187
+msgid "Polish for publication"
+msgstr "Pulir para publicación"
+
+#: seshat/resources/examples.json:194
+msgid "Rearrange for better flow"
+msgstr "Reordena para mejorar la fluidez"
+
+#: seshat/resources/examples.json:201
+msgid "Rephrase to avoid repetition"
+msgstr "Reformula para evitar repeticiones"
+
+#: seshat/resources/examples.json:208
+msgid "Replace jargon with plain language"
+msgstr "Reemplaza la jerga por lenguaje claro"
+
+#: seshat/resources/examples.json:215
+msgid "Reword to remove redundancy"
+msgstr "Reformula para eliminar redundancias"
+
+#: seshat/resources/examples.json:222
+msgid "Rewrite to avoid passive voice"
+msgstr "Reescribe para evitar la voz pasiva"
+
+#: seshat/resources/examples.json:229
+msgid "Rewrite to improve clarity"
+msgstr "Reescribe para mejorar la claridad"
+
+#: seshat/resources/examples.json:236
+msgid "Rewrite to match a formal tone"
+msgstr "Reescribe con un tono formal"
+
+#: seshat/resources/examples.json:243
+msgid "Rewrite to match the intended audience"
+msgstr "Reescribe según la audiencia prevista"
+
+#: seshat/resources/examples.json:250
+msgid "Rewrite to sound more friendly and approachable"
+msgstr "Reescribe para que suene más amigable y accesible"
+
+#: seshat/resources/examples.json:257
+msgid "Rewrite to sound more professional"
+msgstr "Reescribe para que suene más profesional"
+
+#: seshat/resources/examples.json:264
+msgid "Rewrite with a humorous tone"
+msgstr "Reescribe con un tono humorístico"
+
+#: seshat/resources/examples.json:271
+msgid "Rewrite with a sarcastic tone"
+msgstr "Reescribe con un tono sarcástico"
+
+#: seshat/resources/examples.json:278
+msgid "Suggest a more precise word for this"
+msgstr "Sugiere una palabra más precisa para esto"
+
+#: seshat/resources/examples.json:285
+msgid "Suggest 10 antonyms for this"
+msgstr "Sugiere 10 antónimos para esto"
+
+#: seshat/resources/examples.json:292
+msgid "Suggest 10 adjectives that intensify this"
+msgstr "Sugiere 10 adjetivos que intensifiquen esto"
+
+#: seshat/resources/examples.json:299
+msgid "Suggest 10 emotionally neutral versions of this"
+msgstr "Sugiere 10 versiones emocionalmente neutras de esto"
+
+#: seshat/resources/examples.json:306
+msgid "Suggest 10 euphemisms for this"
+msgstr "Sugiere 10 eufemismos para esto"
+
+#: seshat/resources/examples.json:313
+msgid "Suggest 10 hypernyms for this"
+msgstr "Sugiere 10 hiperónimos para esto"
+
+#: seshat/resources/examples.json:320
+msgid "Suggest 10 hyponyms for this"
+msgstr "Sugiere 10 hipónimos para esto"
+
+#: seshat/resources/examples.json:327
+msgid "Suggest 10 idioms or expressions related to this"
+msgstr "Sugiere 10 modismos o expresiones relacionadas"
+
+#: seshat/resources/examples.json:334
+msgid "Suggest 10 more formal alternatives for this"
+msgstr "Sugiere 10 alternativas más formales"
+
+#: seshat/resources/examples.json:341
+msgid "Suggest 10 simpler alternatives for this"
+msgstr "Sugiere 10 alternativas más simples"
+
+#: seshat/resources/examples.json:348
+msgid "Suggest 10 slang alternatives for this"
+msgstr "Sugiere 10 alternativas coloquiales"
+
+#: seshat/resources/examples.json:355
+msgid "Suggest 10 stronger or more vivid words"
+msgstr "Sugiere 10 palabras más fuertes o vívidas"
+
+#: seshat/resources/examples.json:362
+msgid "Suggest 10 synonyms for this"
+msgstr "Sugiere 10 sinónimos para esto"
+
+#: seshat/resources/examples.json:369
+msgid "Rephrase with a more persuasive tone"
+msgstr "Reformula con un tono más persuasivo"
+
+#: seshat/resources/examples.json:376
+msgid "Suggest 10 words that naturally go with this"
+msgstr "Sugiere 10 palabras que combinen con esto"
+
+#: seshat/resources/examples.json:383
+msgid "Translate into English"
+msgstr "Traducir al inglés"
+
+#: seshat/resources/examples.json:390
+msgid "Translate into Spanish"
+msgstr "Traducir al español"
+
+#: seshat/resources/examples.json:397
+msgid "Turn this into a joke"
+msgstr "Convierte esto en un chiste"
+
+#: seshat/resources/examples.json:404
+msgid "Turn this into a short story"
+msgstr "Convierte esto en un cuento corto"
+
+#: seshat/resources/examples.json:411
+msgid "Turn this into an outline"
+msgstr "Convierte esto en un esquema"
+
+#: seshat/resources/examples.json:418
+msgid "Turn this into bullet points"
+msgstr "Convierte esto en viñetas"
+
+#: seshat/resources/examples.json:425
+msgid "Use this word in a sentence"
+msgstr "Usa esta palabra en una oración"
+
+#: seshat/resources/examples.json:432
+msgid "Write a catchy title for this"
+msgstr "Escribe un título llamativo para esto"
+
+#: seshat/resources/examples.json:439
+msgid "Write a conclusion for this section"
+msgstr "Escribe una conclusión para esta sección"
+
+#: seshat/resources/examples.json:446
+msgid "Write a poetic version of this"
+msgstr "Escribe una versión poética de esto"
+
+#: seshat/resources/examples.json:453
+msgid "Write a short caption for social media based on this"
+msgstr "Escribe un mensaje para redes sociales basado en esto"

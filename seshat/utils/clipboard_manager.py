@@ -20,8 +20,7 @@ import os
 import time
 import shutil
 import logging
-from typing import Any, Callable
-from collections.abc import Iterable
+from typing import Callable
 
 from gi.repository import GLib
 from gi.repository.Gdk import Clipboard, Display

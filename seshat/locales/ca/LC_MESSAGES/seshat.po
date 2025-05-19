@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Seshat 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-19 08:37+0200\n"
-"PO-Revision-Date: 2025-05-19 08:54+0200\n"
+"PO-Revision-Date: 2025-05-19 11:43+0200\n"
 "Last-Translator: Joan Sala <contact@joansala.com>\n"
 "Language-Team: Catalan\n"
 "Language: ca\n"
@@ -78,3 +78,315 @@ msgstr "S'ha esgotat el temps màxim d'avaluació"
 #: seshat/resources/command_palette.ui:22
 msgid "Search a task or write your own"
 msgstr "Cerca una tasca o escriu-ne una de pròpia"
+
+#: seshat/resources/config.json:16
+msgid "Carry on this task on the selected text"
+msgstr "Aplica aquesta tasca al text seleccionat"
+
+#: seshat/resources/config.json:24
+msgid "Evaluate algebraic query"
+msgstr "Avalua aquesta consulta algebraica"
+
+#: seshat/resources/config.json:32
+msgid "Evaluate this algebraic expression"
+msgstr "Avalua aquesta expressió algebraica"
+
+#: seshat/resources/config.json:39
+msgid "Transform to uppercase"
+msgstr "Transforma a majúscules"
+
+#: seshat/resources/config.json:46
+msgid "Transform to lowercase"
+msgstr "Transforma a minúscules"
+
+#: seshat/resources/config.json:53
+msgid "Capitalize first letter of each word"
+msgstr "Converteix a majúscula inicial cada mot"
+
+#: seshat/resources/config.json:60
+msgid "Trim whitespace"
+msgstr "Suprimeix els espais en blanc"
+
+#: seshat/resources/config.json:67
+msgid "Capitalize first letter of each line"
+msgstr "Converteix a majúscula inicial cada línia"
+
+#: seshat/resources/config.json:74
+msgid "Delete duplicate lines"
+msgstr "Elimina les línies duplicades"
+
+#: seshat/resources/config.json:81
+msgid "Delete empty lines"
+msgstr "Elimina les línies buides"
+
+#: seshat/resources/config.json:88
+msgid "Reverse lines"
+msgstr "Inverteix les línies"
+
+#: seshat/resources/config.json:95
+msgid "Sort lines ascending"
+msgstr "Ordena les línies de manera ascendent"
+
+#: seshat/resources/config.json:102
+msgid "Sort lines descending"
+msgstr "Ordena les línies de manera descendent"
+
+#: seshat/resources/examples.json:5
+msgid "Add a call to action after this"
+msgstr "Afegeix una crida a l'acció al final"
+
+#: seshat/resources/examples.json:12
+msgid "Add humor to this text"
+msgstr "Afegeix humor a aquest text"
+
+#: seshat/resources/examples.json:19
+msgid "Add transitions to improve coherence"
+msgstr "Afegeix transicions per millorar la coherència"
+
+#: seshat/resources/examples.json:26
+msgid "Adjust idioms for a global audience"
+msgstr "Adapta els modismes per a un públic global"
+
+#: seshat/resources/examples.json:33
+msgid "Adjust for an executive audience"
+msgstr "Adapta-ho per a un públic executiu"
+
+#: seshat/resources/examples.json:40
+msgid "Brainstorm ideas based on this"
+msgstr "Genera idees a partir d'això"
+
+#: seshat/resources/examples.json:47
+msgid "Change the tone to be more empathetic"
+msgstr "Canvia el to per fer-lo més empàtic"
+
+#: seshat/resources/examples.json:54
+msgid "Replace word repetitions"
+msgstr "Substitueix les repeticions de paraules"
+
+#: seshat/resources/examples.json:61
+msgid "Convert into a numbered list"
+msgstr "Converteix-ho en una llista numerada"
+
+#: seshat/resources/examples.json:68
+msgid "Define this word or phrase"
+msgstr "Defineix aquesta paraula o expressió"
+
+#: seshat/resources/examples.json:75
+msgid "Extract key facts"
+msgstr "Extreu els fets clau"
+
+#: seshat/resources/examples.json:82
+msgid "Generate a headline based on this"
+msgstr "Genera un titular a partir d'això"
+
+#: seshat/resources/examples.json:89
+msgid "Generate a metaphor for this idea"
+msgstr "Genera una metàfora per a aquesta idea"
+
+#: seshat/resources/examples.json:96
+msgid "Give 5 alternative titles for this"
+msgstr "Proposa 5 títols alternatius"
+
+#: seshat/resources/examples.json:103
+msgid "Highlight the key points"
+msgstr "Ressalta els punts clau"
+
+#: seshat/resources/examples.json:110
+msgid "Improve the grammar and punctuation"
+msgstr "Millora la gramàtica i la puntuació"
+
+#: seshat/resources/examples.json:117
+msgid "Improve this text"
+msgstr "Millora aquest text"
+
+#: seshat/resources/examples.json:124
+msgid "Localize for a British audience"
+msgstr "Adapta-ho per a un públic britànic"
+
+#: seshat/resources/examples.json:131
+msgid "Make the tone consistent throughout"
+msgstr "Fes que el to sigui coherent a tot el text"
+
+#: seshat/resources/examples.json:138
+msgid "Make this more concise and direct"
+msgstr "Fes-ho més concís i directe"
+
+#: seshat/resources/examples.json:145
+msgid "Make this sound more authoritative"
+msgstr "Fes que soni més autoritari"
+
+#: seshat/resources/examples.json:152
+msgid "Make this sound more conversational"
+msgstr "Fes que soni més conversacional"
+
+#: seshat/resources/examples.json:159
+msgid "Make this sound more engaging"
+msgstr "Fes que sigui més captivador"
+
+#: seshat/resources/examples.json:166
+msgid "Make this sound more persuasive"
+msgstr "Fes que soni més convincent"
+
+#: seshat/resources/examples.json:173
+msgid "Make this suitable for an international audience"
+msgstr "Adapta-ho per a un públic internacional"
+
+#: seshat/resources/examples.json:180
+msgid "Organize this list logically"
+msgstr "Organitza aquesta llista de manera lògica"
+
+#: seshat/resources/examples.json:187
+msgid "Polish for publication"
+msgstr "Poliex-ho per a la publicació"
+
+#: seshat/resources/examples.json:194
+msgid "Rearrange for better flow"
+msgstr "Reordena-ho per millorar-ne la fluïdesa"
+
+#: seshat/resources/examples.json:201
+msgid "Rephrase to avoid repetition"
+msgstr "Reformula-ho per evitar repeticions"
+
+#: seshat/resources/examples.json:208
+msgid "Replace jargon with plain language"
+msgstr "Canvia l'argot per llenguatge més planer"
+
+#: seshat/resources/examples.json:215
+msgid "Reword to remove redundancy"
+msgstr "Reformula-ho per eliminar redundàncies"
+
+#: seshat/resources/examples.json:222
+msgid "Rewrite to avoid passive voice"
+msgstr "Reescriu-ho evitant la veu passiva"
+
+#: seshat/resources/examples.json:229
+msgid "Rewrite to improve clarity"
+msgstr "Reescriu-ho per millorar la claredat"
+
+#: seshat/resources/examples.json:236
+msgid "Rewrite to match a formal tone"
+msgstr "Reescriu-ho amb un to més formal"
+
+#: seshat/resources/examples.json:243
+msgid "Rewrite to match the intended audience"
+msgstr "Reescriu-ho per adaptar-ho al públic esperat"
+
+#: seshat/resources/examples.json:250
+msgid "Rewrite to sound more friendly and approachable"
+msgstr "Reescriu-ho per fer-lo més proper i amable"
+
+#: seshat/resources/examples.json:257
+msgid "Rewrite to sound more professional"
+msgstr "Reescriu-ho per fer-lo més professional"
+
+#: seshat/resources/examples.json:264
+msgid "Rewrite with a humorous tone"
+msgstr "Reescriu-ho amb un to humorístic"
+
+#: seshat/resources/examples.json:271
+msgid "Rewrite with a sarcastic tone"
+msgstr "Reescriu-ho amb un to sarcàstic"
+
+#: seshat/resources/examples.json:278
+msgid "Suggest a more precise word for this"
+msgstr "Suggereix una paraula més precisa"
+
+#: seshat/resources/examples.json:285
+msgid "Suggest 10 antonyms for this"
+msgstr "Suggereix 10 antònims d'això"
+
+#: seshat/resources/examples.json:292
+msgid "Suggest 10 adjectives that intensify this"
+msgstr "Suggereix 10 adjectius que intensifiquin això"
+
+#: seshat/resources/examples.json:299
+msgid "Suggest 10 emotionally neutral versions of this"
+msgstr "Suggereix 10 versions emocionalment neutres d'això"
+
+#: seshat/resources/examples.json:306
+msgid "Suggest 10 euphemisms for this"
+msgstr "Suggereix 10 eufemismes d'això"
+
+#: seshat/resources/examples.json:313
+msgid "Suggest 10 hypernyms for this"
+msgstr "Suggereix 10 hiperònims d'això"
+
+#: seshat/resources/examples.json:320
+msgid "Suggest 10 hyponyms for this"
+msgstr "Suggereix 10 hipònims d'això"
+
+#: seshat/resources/examples.json:327
+msgid "Suggest 10 idioms or expressions related to this"
+msgstr "Suggereix 10 modismes o expressions relacionades"
+
+#: seshat/resources/examples.json:334
+msgid "Suggest 10 more formal alternatives for this"
+msgstr "Suggereix 10 alternatives més formals"
+
+#: seshat/resources/examples.json:341
+msgid "Suggest 10 simpler alternatives for this"
+msgstr "Suggereix 10 alternatives més simples"
+
+#: seshat/resources/examples.json:348
+msgid "Suggest 10 slang alternatives for this"
+msgstr "Suggereix 10 alternatives col·loquials"
+
+#: seshat/resources/examples.json:355
+msgid "Suggest 10 stronger or more vivid words"
+msgstr "Suggereix 10 paraules més potents o expressives"
+
+#: seshat/resources/examples.json:362
+msgid "Suggest 10 synonyms for this"
+msgstr "Suggereix 10 sinònims d'això"
+
+#: seshat/resources/examples.json:369
+msgid "Rephrase with a more persuasive tone"
+msgstr "Reformula-ho amb un to més persuasiu"
+
+#: seshat/resources/examples.json:376
+msgid "Suggest 10 words that naturally go with this"
+msgstr "Suggereix 10 paraules que s'associïn amb això"
+
+#: seshat/resources/examples.json:383
+msgid "Translate into English"
+msgstr "Tradueix-ho a l'anglès"
+
+#: seshat/resources/examples.json:390
+msgid "Translate into Spanish"
+msgstr "Tradueix-ho al castellà"
+
+#: seshat/resources/examples.json:397
+msgid "Turn this into a joke"
+msgstr "Converteix-ho en una broma"
+
+#: seshat/resources/examples.json:404
+msgid "Turn this into a short story"
+msgstr "Converteix-ho en un relat curt"
+
+#: seshat/resources/examples.json:411
+msgid "Turn this into an outline"
+msgstr "Converteix-ho en un esquema"
+
+#: seshat/resources/examples.json:418
+msgid "Turn this into bullet points"
+msgstr "Converteix-ho en una llista de punts"
+
+#: seshat/resources/examples.json:425
+msgid "Use this word in a sentence"
+msgstr "Fes servir aquesta paraula en una frase"
+
+#: seshat/resources/examples.json:432
+msgid "Write a catchy title for this"
+msgstr "Escriu un títol atractiu per a això"
+
+#: seshat/resources/examples.json:439
+msgid "Write a conclusion for this section"
+msgstr "Escriu una conclusió per a aquesta secció"
+
+#: seshat/resources/examples.json:446
+msgid "Write a poetic version of this"
+msgstr "Escriu-ne una versió poètica"
+
+#: seshat/resources/examples.json:453
+msgid "Write a short caption for social media based on this"
+msgstr "Escriu un missatge per a xarxes socials basat en això"

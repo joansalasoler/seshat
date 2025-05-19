@@ -1,6 +1,6 @@
 {
-    "window_width": 500,
-    "window_height": 360,
+    "window_width": 550,
+    "window_height": 380,
     "paste_delay": 0.3,
     "paste_keybinding": "shift+Insert",
     "hotkey_poll_interval": 0.05,
@@ -53,7 +53,7 @@
         },
         {
             "uuid": "f186296a-5efd-45af-ae44-883a12de1c99",
-            "label": "Transform to title case",
+            "label": "Capitalize first letter of each word",
             "icon_name": "format-justify-left-symbolic",
             "action_name": "text:title",
             "is_builtin": true
@@ -67,7 +67,7 @@
         },
         {
             "uuid": "13e1233a-d418-470e-8cb3-96d00225dbbd",
-            "label": "Capitalize lines",
+            "label": "Capitalize first letter of each line",
             "icon_name": "format-justify-left-symbolic",
             "action_name": "text:capitalize",
             "is_builtin": true

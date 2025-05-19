@@ -19,6 +19,7 @@
 import dbm, json, logging
 from pathlib import Path
 from typing import Any
+from locale import gettext as _
 from seshat import RESOURCES_DIR, CONFIG_DIR
 
 _logger = logging.getLogger(__name__)
@@ -114,6 +115,9 @@ class ConfigManager:
 
         self._load_from_json(self._defaults_path)
 
+        for uuid, command in self._commands.items():
+            self._localize_command(command)
+
         if self._config_path.exists():
             self._load_from_json(self._config_path)
 
@@ -149,6 +153,7 @@ class ConfigManager:
 
             with path.open('r') as f:
                 for command in json.load(f)["commands"]:
+                    self._localize_command(command)
                     self.save_command(command)
         except Exception as e:
             _logger.error("Error prefilling saved commands: %s", e)
@@ -227,3 +232,8 @@ class ConfigManager:
 
         self._commands_db.sync()
         self._usage_db.sync()
+
+    def _localize_command(self, command: dict) -> None:
+        """Translate a command label."""
+
+        command.update(label=_(command.get("label")))

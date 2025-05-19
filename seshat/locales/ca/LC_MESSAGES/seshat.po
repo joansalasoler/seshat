@@ -1,0 +1,80 @@
+# Catalan translations for Seshat package.
+# Copyright (C) 2025 Joan Sala
+# This file is distributed under the same license as the Seshat package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Seshat 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-19 08:37+0200\n"
+"PO-Revision-Date: 2025-05-19 08:54+0200\n"
+"Last-Translator: Joan Sala <contact@joansala.com>\n"
+"Language-Team: Catalan\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#: seshat/__main__.py:28
+msgid "Unhandled exception:"
+msgstr "Excepció no gestionada:"
+
+#: seshat/application/application.py:58
+msgid "Activate the palette"
+msgstr "Activa la paleta"
+
+#: seshat/application/application.py:59
+msgid "Reload user settings"
+msgstr "Torna a carregar la configuració de l'usuari"
+
+#: seshat/application/application.py:60
+msgid "Device to listen for hotkeys"
+msgstr "Dispositiu on detectar dreceres de teclat"
+
+#: seshat/application/application.py:176
+msgid "I'm working on it —please hold on."
+msgstr "Hi estic treballant —espera un moment, si us plau."
+
+#: seshat/actions/chat_provider.py:74
+msgid "Invalid response from model"
+msgstr "El model no ha tornat cap resposta vàlida"
+
+#: seshat/actions/chat_provider.py:98
+#, python-format
+msgid "Cannot connect to AI service at %s. Please check if the service is running."
+msgstr "No es pot connectar al servei d'IA a %s. Comprova si el servei està engegat."
+
+#: seshat/actions/chat_provider.py:151 seshat/actions/chat_provider.py:161
+msgid "No response could be generated."
+msgstr "No s'ha pogut generar cap resposta."
+
+#: seshat/actions/chat_provider.py:157
+msgid "Unknown error"
+msgstr "Error desconegut"
+
+#: seshat/actions/chat_provider.py:168
+#, python-format
+msgid "Model or API endpoint not found: '%s' at '%s'"
+msgstr "No s'ha trobat el model o punt final de l'API: '%s' a '%s'"
+
+#: seshat/actions/math_provider.py:90
+msgid "Could not evaluate expression"
+msgstr "No s'ha pogut avaluar l'expressió"
+
+#: seshat/actions/math_provider.py:96
+msgid "Expression returned a callback."
+msgstr "L'expressió ha tornat una funció."
+
+#: seshat/actions/math_provider.py:103
+msgid "Expression evaluates to nothing"
+msgstr "L'expressió no torna cap resultat"
+
+#: seshat/actions/math_provider.py:121
+msgid "Evaluation timed out"
+msgstr "S'ha esgotat el temps màxim d'avaluació"
+
+#: seshat/resources/command_palette.ui:22
+msgid "Search a task or write your own"
+msgstr "Cerca una tasca o escriu-ne una de pròpia"

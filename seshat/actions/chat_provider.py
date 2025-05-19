@@ -87,10 +87,16 @@ class ChatProvider(ActionProvider):
         }
 
         async with aiohttp.ClientSession() as session:
-            async with session.post(url, json=payload) as response:
-                response.raise_for_status()
-                data = await response.json()
-                return data["message"]["content"]
+            try:
+                async with session.post(url, json=payload) as response:
+                    self._raise_for_status(response)
+                    data = await response.json()
+                    return data["message"]["content"]
+            except aiohttp.ClientConnectorError:
+                raise ValueError(
+                    f"Cannot connect to AI service at {self._base_url}. "
+                    f"Please check if the service is running."
+                )
 
     def _read_base_prompt(self) -> str:
         """Reads the base prompt from the resources directory."""
@@ -153,6 +159,17 @@ class ChatProvider(ActionProvider):
 
         if content.get("answers") is None:
             raise ValueError("No response could be generated.")
+
+    def _raise_for_status(self, response) -> None:
+        """Raises ValueError if the response status is 'error'."""
+
+        if response.status == 404:
+            raise ValueError(
+                f"Model or API endpoint not found: "
+                f"'{self._default_model}' at '{self._base_url}'"
+            )
+
+        response.raise_for_status()
 
     def _normalize_response(self, content: dict) -> dict:
         """Normalizes the model response to ensure it is valid."""

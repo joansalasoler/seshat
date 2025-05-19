@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import time
 from typing import Callable
 from gi.repository import Gdk, Gtk, GObject
 from seshat import RESOURCES_DIR
@@ -69,6 +70,9 @@ class CommandPalette(Gtk.ApplicationWindow):
         self._active_list = self._command_list
         self._focus_event = Gtk.EventControllerFocus()
         self._key_event = Gtk.EventControllerKey()
+        self._status_timestamp = 0
+        self._error_shown = False
+
         self.add_controller(self._focus_event)
         self.add_controller(self._key_event)
         self._connect_signals()
@@ -175,8 +179,10 @@ class CommandPalette(Gtk.ApplicationWindow):
     def show_status(self, message: str, style="progress") -> None:
         """Show a status message in the status label."""
 
+        self._error_shown = (style == "error")
+        self._status_timestamp = time.time()
         self._progress_bar.set_visible(style == "progress")
-        self._status_label.set_label(message)
+        self._status_label.set_label(message.strip())
         self._status_box.set_css_classes([style, "frame", "background"])
         self._status_box.set_visible(True)
 
@@ -184,6 +190,15 @@ class CommandPalette(Gtk.ApplicationWindow):
         """Clear the status message from the status label."""
 
         self._status_box.set_visible(False)
+
+    def hide_errors(self) -> None:
+        """Clear the status message if it is showing an error and was shown more than 2 seconds ago."""
+
+        current_time = time.time()
+
+        if self._error_shown and self._status_box.get_visible():
+            if current_time - self._status_timestamp >= 2:
+                self._status_box.set_visible(False)
 
     def _on_window_mapped(self, window: Gtk.ApplicationWindow) -> None:
         """Handle the window being mapped shown."""

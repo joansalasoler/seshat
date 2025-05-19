@@ -55,6 +55,7 @@ class Application(Gtk.Application):
 
         # Add command line options
         self._add_cli_flag("show-palette", "Activate the palette")
+        self._add_cli_flag("reload-settings", "Reload user settings")
         self._add_cli_option("input-device", "Device to listen for hotkeys")
 
     def show_palette(self) -> None:
@@ -218,6 +219,9 @@ class Application(Gtk.Application):
         if "show-palette" in options:
             app.show_palette()
 
+        if "reload-settings" in options:
+            self._reload_settings()
+
         if "input-device" in options:
             device_path = options["input-device"]
             self._setup_hotkey_listener(device_path)
@@ -312,6 +316,7 @@ class Application(Gtk.Application):
 
         data = self._config.get_commands()
         self._commands = Command.from_dict_list(data)
+        self._palette.clear_commands()
 
         for command in self._commands:
             palette.add_command(command)
@@ -360,6 +365,15 @@ class Application(Gtk.Application):
         delay = self._config.get_option("paste_delay")
         clipboard.set_paste_keybinding(keybinding)
         clipboard.set_paste_delay(delay)
+
+    def _reload_settings(self) -> None:
+        """Reload user settings from configuration files."""
+
+        self._config.reload_settings()
+        self._setup_window_size(self._palette)
+        self._setup_commands(self._palette)
+        self._setup_clipboard(self._clipboard)
+        self._setup_actions(self._config)
 
     def _setup_hotkey_listener(self, device_path: str) -> None:
         """Set up the hotkey listener for palette activation."""

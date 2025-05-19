@@ -143,9 +143,11 @@ class Application(Gtk.Application):
             palette.hide()
             return True
         elif keyval == Gdk.KEY_Down:
+            palette.hide_errors()
             palette.navigate_next()
             return True
         elif keyval == Gdk.KEY_Up:
+            palette.hide_errors()
             palette.navigate_previous()
             return True
 

@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import logging
+from locale import gettext as _
 from typing import List
 from collections.abc import Iterable
 from gi.repository import Gtk, Gdk, Gio, GLib
@@ -54,9 +55,9 @@ class Application(Gtk.Application):
         self.connect('command-line', self._on_command_line)
 
         # Add command line options
-        self._add_cli_flag("show-palette", "Activate the palette")
-        self._add_cli_flag("reload-settings", "Reload user settings")
-        self._add_cli_option("input-device", "Device to listen for hotkeys")
+        self._add_cli_flag("show-palette", _("Activate the palette"))
+        self._add_cli_flag("reload-settings", _("Reload user settings"))
+        self._add_cli_option("input-device", _("Device to listen for hotkeys"))
 
     def show_palette(self) -> None:
         """Show the command palette"""
@@ -172,7 +173,7 @@ class Application(Gtk.Application):
         command = row.get_command()
         self._executor.submit(command, query, self._input)
 
-        palette.show_status("I'm working on it —please hold on.")
+        palette.show_status(_("I'm working on it —please hold on."))
         GLib.timeout_add(100, _update_progress)
 
     def _on_task_success(self, executor: TaskExecutor, task: TaskContext) -> None:

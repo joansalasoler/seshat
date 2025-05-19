@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import re
+from locale import gettext as _
 from collections.abc import Iterable
 from functools import lru_cache
 from multiprocessing import Process, Queue, queues
@@ -86,20 +87,20 @@ class MathProvider(ActionProvider):
 
             if len(asteval.error) > 0:
                 raise SyntaxError(
-                    "Could not evaluate expression"
+                    _("Could not evaluate expression")
                     if len(asteval.error_msg) < 1 else
                     asteval.error_msg
                 )
 
             if callable(result):
-                raise ValueError("Expression returned a callback.")
+                raise ValueError(_("Expression returned a callback."))
 
             if isinstance(result, Iterable):
                 if not isinstance(result, str):
                     result = ", ".join(map(str, result))
 
             if result is None or str(result).strip() == str():
-                raise ValueError("Expression evaluates to nothing")
+                raise ValueError(_("Expression evaluates to nothing"))
 
             return (str(result), None)
         except Exception as e:
@@ -117,7 +118,7 @@ class MathProvider(ActionProvider):
             return self._to_str(result)
         except queues.Empty:
             self._terminate_process()
-            raise TimeoutError("Evaluation timed out")
+            raise TimeoutError(_("Evaluation timed out"))
 
     def _to_str(self, content: Any) -> str:
         """Convert any content to a string representation."""

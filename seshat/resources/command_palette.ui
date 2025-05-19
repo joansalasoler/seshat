@@ -19,7 +19,7 @@
             <child>
               <object class="GtkSearchEntry" id="search_entry">
                 <property name="name">search_entry</property>
-                <property name="placeholder_text">Search a task or write your own</property>
+                <property name="placeholder_text" translatable="yes">Search a task or write your own</property>
               </object>
             </child>
             <child>

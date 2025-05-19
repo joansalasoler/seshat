@@ -18,6 +18,7 @@
 
 import json, re, locale
 import asyncio, aiohttp
+from locale import gettext as _
 from datetime import datetime
 
 from seshat import RESOURCES_DIR
@@ -70,7 +71,7 @@ class ChatProvider(ActionProvider):
         except asyncio.CancelledError:
             raise
         except json.JSONDecodeError:
-            raise ValueError("Invalid response from model")
+            raise ValueError(_("Invalid response from model"))
         except Exception as e:
             raise RuntimeError(e)
 
@@ -93,9 +94,10 @@ class ChatProvider(ActionProvider):
                     data = await response.json()
                     return data["message"]["content"]
             except aiohttp.ClientConnectorError:
-                raise ValueError(
-                    f"Cannot connect to AI service at {self._base_url}. "
-                    f"Please check if the service is running."
+                raise ValueError(_(
+                    "Cannot connect to AI service at '%s'. "
+                    "Please check if the service is running."
+                    ) % self._base_url
                 )
 
     def _read_base_prompt(self) -> str:
@@ -148,25 +150,25 @@ class ChatProvider(ActionProvider):
             except json.JSONDecodeError:
                 pass
 
-        raise ValueError("No response could be generated.")
+        raise ValueError(_("No response could be generated."))
 
     def _raise_for_error(self, content: dict) -> None:
         """Raises ValueError if the response status is 'error'."""
 
         if content.get("status") == "error":
-            message = content.get("error_message", "Unknown error")
+            message = content.get("error_message", _("Unknown error"))
             raise ValueError(message)
 
         if content.get("answers") is None:
-            raise ValueError("No response could be generated.")
+            raise ValueError(_("No response could be generated."))
 
     def _raise_for_status(self, response) -> None:
         """Raises ValueError if the response status is 'error'."""
 
         if response.status == 404:
             raise ValueError(
-                f"Model or API endpoint not found: "
-                f"'{self._default_model}' at '{self._base_url}'"
+                _("Model or API endpoint not found: '%s' at '%s'") % (
+                    self._default_model, self._base_url)
             )
 
         response.raise_for_status()

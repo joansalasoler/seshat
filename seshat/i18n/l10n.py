@@ -16,30 +16,25 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import sys, traceback, gi
-gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, GLib
-from locale import gettext as _
-from seshat.application import Application
+import os, sys, locale
 
 
-def handle_exception(exc_type, exc_value, exc_traceback):
-    print(_("Unhandled exception:"), exc_value, file=sys.stderr)
-    traceback.print_exception(exc_type, exc_value, exc_traceback)
-    app = Gtk.Application.get_default()
-    GLib.idle_add(app.quit)
+def setup_locale(text_domain: str, locale_path: str) -> None:
+    """Set up localization for the application."""
 
+    language = locale.getdefaultlocale()[0] or "en"
+    locale.setlocale(locale.LC_ALL, '')
 
-def main():
-    sys.excepthook = handle_exception
+    if os.path.isdir(locale_path):
+        os.environ['LOCPATH'] = locale_path
 
-    try:
-        app = Application()
-        exit_status = app.run(sys.argv)
-        sys.exit(exit_status)
-    except KeyboardInterrupt:
-        pass
+    if 'LANG' not in os.environ or not os.environ['LANG']:
+        os.environ['LANG'] = language
 
+    if 'LOCPATH' not in os.environ or not os.environ['LOCPATH']:
+        locale_path = f'{ sys.base_prefix }/share/locale'
+        os.environ['LOCPATH'] = locale_path
 
-if __name__ == "__main__":
-    main()
+    locale.bind_textdomain_codeset(text_domain, 'utf-8')
+    locale.bindtextdomain(text_domain, locale_path)
+    locale.textdomain(text_domain)

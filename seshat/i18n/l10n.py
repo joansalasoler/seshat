@@ -17,6 +17,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os, sys, locale
+import unicodedata
 
 
 def setup_locale(text_domain: str, locale_path: str) -> None:
@@ -31,3 +32,12 @@ def setup_locale(text_domain: str, locale_path: str) -> None:
     locale.bind_textdomain_codeset(text_domain, "utf-8")
     locale.bindtextdomain(text_domain, locale_path)
     locale.textdomain(text_domain)
+
+
+def normalize_text(text: str) -> str:
+    """Normalize a text for comparison."""
+
+    return ''.join(
+        c for c in unicodedata.normalize('NFKD', text)
+        if not unicodedata.combining(c)
+    ).lower()

@@ -27,6 +27,7 @@ from seshat.tasks import TaskContext, TaskExecutor
 from seshat.utils import ClipboardManager, ConfigManager, HotkeyListener
 from seshat.actions import ChatProvider, TextProvider, MathProvider
 from seshat.actions import ActionRegistry
+from seshat.i18n import normalize_text
 
 from .command_palette import CommandPalette
 from .command_row import CommandRow
@@ -242,10 +243,13 @@ class Application(Gtk.Application):
         if command.is_proactive:
             return command.answer is not None
 
-        return (
-            has_query is False or
-            search_text.lower() in command.label.lower()
-        )
+        if has_query is False:
+            return True
+
+        normalized_search = normalize_text(search_text)
+        normalized_label = normalize_text(command.label)
+
+        return normalized_search in normalized_label
 
     def _sort_row(self, row1: CommandRow, row2: CommandRow) -> int:
         """Sort function for command rows."""
@@ -275,6 +279,14 @@ class Application(Gtk.Application):
         label2 = row2.get_text().lower()
 
         return -1 if label1 < label2 else 1
+
+    def _normalize_text(self, text: str) -> str:
+        """Normalize a text for comparison."""
+
+        return ''.join(
+            c for c in unicodedata.normalize('NFKD', text)
+            if not unicodedata.combining(c)
+        ).lower()
 
     def _prefetch_answers(self, query: str) -> None:
         """Prefetch results for proactive commands."""

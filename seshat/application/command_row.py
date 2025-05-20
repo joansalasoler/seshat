@@ -17,8 +17,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from gi.repository import Gtk, GLib, GObject
-from seshat import RESOURCES_DIR
 from .command import Command
+from seshat import RESOURCES_DIR
+from seshat.i18n import normalize_text
 
 
 @Gtk.Template(filename=RESOURCES_DIR / "command_row.ui")
@@ -112,23 +113,31 @@ class CommandRow(Gtk.ListBoxRow):
         prefix = str() if is_starred else "non-"
         self._star_icon.set_from_icon_name(f"{prefix}starred-symbolic")
 
-    def _markup_text(self, text: str, query: str) -> None:
+    def _markup_text(self, text: str, query: str) -> str:
         """Highlight the query in the label text."""
 
+        if query is None or len(query.strip()) < 1:
+            return text
+
+        normalized_text = normalize_text(text)
+        normalized_query = normalize_text(query)
+        index = normalized_text.find(normalized_query)
+
+        if index == -1:
+            return text
+
         result = text
-        text_lower = text.lower()
 
-        if query in text_lower and query != str():
-            start = text_lower.find(query)
-            end = start + len(query)
+        start = self._find_start(text, index)
+        end = self._find_end(text, start, normalized_query)
 
-            start_text = self._escape_markup(text[:start])
-            marked_text = self._escape_markup(text[start:end])
-            end_text = self._escape_markup(text[end:])
+        start_text = self._escape_markup(text[:start])
+        marked_text = self._escape_markup(text[start:end])
+        end_text = self._escape_markup(text[end:])
 
-            result = start_text
-            result += f"<span><b>{marked_text}</b></span>"
-            result += end_text
+        result = start_text
+        result += f"<span><b>{marked_text}</b></span>"
+        result += end_text
 
         return result
 
@@ -136,3 +145,30 @@ class CommandRow(Gtk.ListBoxRow):
         """Escape the markup in the label text."""
 
         return GLib.markup_escape_text(text)
+
+    def _find_start(self, text: str, index: int) -> int:
+        """Map normalized index to original string index."""
+
+        i = 0
+        n = 0
+
+        while n < index and i < len(text):
+            character = text[i]
+            normalized = normalize_text(character)
+            n += len(normalized)
+            i += 1
+
+        return i
+
+    def _find_end(self, text: str, start: int, query: str) -> int:
+        """Map normalized query length to end index in original string."""
+
+        count = 0
+        end = start
+
+        while count < len(query) and end < len(text):
+            character = text[end]
+            count += len(normalize_text(character))
+            end += 1
+
+        return end

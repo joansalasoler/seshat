@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import json, re, locale
+import json, re
 import asyncio, aiohttp
 from locale import gettext as _
 from datetime import datetime
@@ -195,7 +195,6 @@ class ChatProvider(ActionProvider):
         today = now.date()
 
         return {
-            "User language": locale.getlocale()[0],
             "Current date": today.isoformat(),
             "Current time": now.strftime("%H:%M"),
             "Current day name": now.strftime("%A"),

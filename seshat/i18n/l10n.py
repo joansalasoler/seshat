@@ -22,19 +22,12 @@ import os, sys, locale
 def setup_locale(text_domain: str, locale_path: str) -> None:
     """Set up localization for the application."""
 
-    language = locale.getdefaultlocale()[0] or "en"
-    locale.setlocale(locale.LC_ALL, '')
+    os.environ.setdefault("LANG", "en_US.UTF-8")
+    locale.setlocale(locale.LC_ALL, "")
 
-    if os.path.isdir(locale_path):
-        os.environ['LOCPATH'] = locale_path
+    if not os.path.isdir(locale_path):
+        locale_path = f"{ sys.base_prefix }/share/locale"
 
-    if 'LANG' not in os.environ or not os.environ['LANG']:
-        os.environ['LANG'] = language
-
-    if 'LOCPATH' not in os.environ or not os.environ['LOCPATH']:
-        locale_path = f'{ sys.base_prefix }/share/locale'
-        os.environ['LOCPATH'] = locale_path
-
-    locale.bind_textdomain_codeset(text_domain, 'utf-8')
+    locale.bind_textdomain_codeset(text_domain, "utf-8")
     locale.bindtextdomain(text_domain, locale_path)
     locale.textdomain(text_domain)

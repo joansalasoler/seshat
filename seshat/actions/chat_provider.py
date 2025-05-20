@@ -195,7 +195,7 @@ class ChatProvider(ActionProvider):
         today = now.date()
 
         return {
-            "User language": locale.getdefaultlocale()[0],
+            "User language": locale.getlocale()[0],
             "Current date": today.isoformat(),
             "Current time": now.strftime("%H:%M"),
             "Current day name": now.strftime("%A"),

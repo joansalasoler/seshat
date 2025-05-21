@@ -8,6 +8,13 @@ A GTK-based command palette application with generative AI capabilities for quic
 
 **Seshat** is a command palette application that provides a quick way to transform selected text using various operations. It integrates with Ollama to provide custom AI-powered text transformations.
 
+Key features:
+
+- Mathematical operations (quick calculator).
+- Text transformations (case conversion, sorting, formatting).
+- AI-powered text generation and transformation via Ollama.
+- Customizable through configuration.
+
 ### How It Works
 
 Seshat operates by:
@@ -18,13 +25,6 @@ Seshat operates by:
 4. Returning the transformed text to the clipboard and automatically sending a "Shift+Insert" keybinding to paste it back into the application
 
 **Note:** Seshat currently works only on X11-based Linux environments due to its dependency on xdotool and X11 clipboard mechanisms. Wayland support is not available at this time.
-
-Key features:
-
-- Mathematical operations.
-- Text transformations (case conversion, sorting, formatting).
-- AI-powered text generation and transformation via Ollama.
-- Customizable through configuration.
 
 ## Installation
 

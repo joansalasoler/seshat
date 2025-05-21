@@ -2,6 +2,8 @@
 
 A GTK-based command palette application with generative AI capabilities for quick text transformations. Named after **Seshat**, the ancient Egyptian goddess of writing, wisdom, and knowledge who was the divine measurer and recorder of time.
 
+![Demo](https://raw.githubusercontent.com/joansalasoler/assets/master/demos/seshat.gif)
+
 ## Overview
 
 **Seshat** is a command palette application that provides a quick way to transform selected text using various operations. It integrates with Ollama to provide custom AI-powered text transformations.

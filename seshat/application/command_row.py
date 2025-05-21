@@ -79,6 +79,11 @@ class CommandRow(Gtk.ListBoxRow):
         self._star_button.set_active(is_starred)
         self._update_star_icon()
 
+    def toggle_starred(self) -> None:
+        """Toggle the command's starred status."""
+
+        self._star_button.activate()
+
     def _get_label_text(self) -> str:
         """Return the text to display in the label."""
 

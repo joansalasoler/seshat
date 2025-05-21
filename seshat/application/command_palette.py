@@ -94,6 +94,11 @@ class CommandPalette(Gtk.ApplicationWindow):
 
         return self._search_entry.get_text()
 
+    def get_selected_row(self) -> CommandRow:
+        """Get the active row in the active list."""
+
+        return self._active_list.get_selected_row()
+
     def set_command_filter(self, callback: Callable) -> None:
         """Set the filter function for the command list.
 

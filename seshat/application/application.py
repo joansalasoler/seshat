@@ -153,6 +153,13 @@ class Application(Gtk.Application):
             palette.hide_errors()
             palette.navigate_previous()
             return True
+        elif keyval == Gdk.KEY_d:
+            if state & Gdk.ModifierType.CONTROL_MASK:
+                row = palette.get_selected_row()
+
+                if isinstance(row, CommandRow):
+                    row.toggle_starred()
+                    return True
 
         return False
 
